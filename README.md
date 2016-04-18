@@ -36,5 +36,5 @@ if($page_count <= $page_tabs){ ... }              //Checks if $page_count is eno
 /*          Functions          */
 string getLink(int $page);                                        //returns link concatenated with $page var
 string getPageTab(string $link, string $visible, string $value);  //returns html string filled with parameters
-string getPagination(int $page, int $page_count);                 //returns whole pagination html(div) string
+void getPagination(int $page, int $page_count);                   //prints whole pagination html(div) string
 ```
