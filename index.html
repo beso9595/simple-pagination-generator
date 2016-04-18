@@ -1,0 +1,82 @@
+<html>
+<head>
+	<style>
+		body{
+			background-color: #41a0bf;
+		}
+		
+		.button{
+			padding: 3px;
+		}
+
+		.button button{
+			padding: 10px;
+			background-color: #ee4e4e;
+			text-decoration: none;
+			color: #fff;
+			cursor:pointer;
+			border: none;
+		}
+
+		.button button:hover{
+			background-color: #de1818;
+			color: #fff;
+			cursor:pointer;
+		}
+
+		.button button:disabled{
+			background-color: #f6efcc;
+			color: #6d643c;
+			cursor: text;
+		}
+
+		#pags{
+			text-align: center;
+		}
+
+		h3{
+			color: #f6efcc;
+			text-shadow: 2px 2px #de1818;
+		}
+		
+		h1{
+			color: #41a0bf;
+			text-shadow: 3px 3px #de1818;
+			font-size: 250%;
+		}
+		
+		h2{
+			color: #41a0bf;
+			text-shadow: 3px 3px #de1818;
+		}
+		
+		h1 a{
+			color: #41a0bf;
+			text-shadow: 3px 3px #5A0086;
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+<div id="pags">
+	<!--	examples	-->
+	<h1>Simple pagination generator</h1>
+	<h1 id="project"><a href="https://github.com/beso9595/simple-pagination-generator" target="_blank">View Project</a></h1>
+	<h3>$page = 1, $page_count = 200;</h3>
+	<div class='pag'><a class='button' href=''><button disabled><<</button></a><a class='button' href='http://example.com/?page=1'><button disabled>1</button></a><a class='button' href='http://example.com/?page=2'><button >2</button></a><a class='button' href='http://example.com/?page=3'><button >3</button></a><a class='button' href='http://example.com/?page=4'><button >4</button></a><a class='button' href='http://example.com/?page=5'><button >5</button></a><a class='button' href='http://example.com/?page=6'><button >6</button></a><a class='button' href='http://example.com/?page=7'><button >7</button></a><a class='button' href='http://example.com/?page=1'><button disabled>...</button></a><a class='button' href='http://example.com/?page=200'><button >200</button></a><a class='button' href='http://example.com/?page=2'><button >>></button></a></div>	<h3>$page = 2, $page_count = 200;</h3>
+	<div class='pag'><a class='button' href='http://example.com/?page=1'><button ><<</button></a><a class='button' href='http://example.com/?page=1'><button >1</button></a><a class='button' href='http://example.com/?page=2'><button disabled>2</button></a><a class='button' href='http://example.com/?page=3'><button >3</button></a><a class='button' href='http://example.com/?page=4'><button >4</button></a><a class='button' href='http://example.com/?page=5'><button >5</button></a><a class='button' href='http://example.com/?page=6'><button >6</button></a><a class='button' href='http://example.com/?page=7'><button >7</button></a><a class='button' href='http://example.com/?page=2'><button disabled>...</button></a><a class='button' href='http://example.com/?page=200'><button >200</button></a><a class='button' href='http://example.com/?page=3'><button >>></button></a></div>	<h3>$page = 7, $page_count = 200;</h3>
+	<div class='pag'><a class='button' href='http://example.com/?page=6'><button ><<</button></a><a class='button' href='http://example.com/?page=1'><button >1</button></a><a class='button' href='http://example.com/?page=7'><button disabled>...</button></a><a class='button' href='http://example.com/?page=5'><button >5</button></a><a class='button' href='http://example.com/?page=6'><button >6</button></a><a class='button' href='http://example.com/?page=7'><button disabled>7</button></a><a class='button' href='http://example.com/?page=8'><button >8</button></a><a class='button' href='http://example.com/?page=9'><button >9</button></a><a class='button' href='http://example.com/?page=7'><button disabled>...</button></a><a class='button' href='http://example.com/?page=200'><button >200</button></a><a class='button' href='http://example.com/?page=8'><button >>></button></a></div>	<h3>$page = 150, $page_count = 200;</h3>
+	<div class='pag'><a class='button' href='http://example.com/?page=149'><button ><<</button></a><a class='button' href='http://example.com/?page=1'><button >1</button></a><a class='button' href='http://example.com/?page=150'><button disabled>...</button></a><a class='button' href='http://example.com/?page=148'><button >148</button></a><a class='button' href='http://example.com/?page=149'><button >149</button></a><a class='button' href='http://example.com/?page=150'><button disabled>150</button></a><a class='button' href='http://example.com/?page=151'><button >151</button></a><a class='button' href='http://example.com/?page=152'><button >152</button></a><a class='button' href='http://example.com/?page=150'><button disabled>...</button></a><a class='button' href='http://example.com/?page=200'><button >200</button></a><a class='button' href='http://example.com/?page=151'><button >>></button></a></div>	<h3>$page = 195, $page_count = 200;</h3>
+	<div class='pag'><a class='button' href='http://example.com/?page=194'><button ><<</button></a><a class='button' href='http://example.com/?page=1'><button >1</button></a><a class='button' href='http://example.com/?page=195'><button disabled>...</button></a><a class='button' href='http://example.com/?page=194'><button >194</button></a><a class='button' href='http://example.com/?page=195'><button disabled>195</button></a><a class='button' href='http://example.com/?page=196'><button >196</button></a><a class='button' href='http://example.com/?page=197'><button >197</button></a><a class='button' href='http://example.com/?page=198'><button >198</button></a><a class='button' href='http://example.com/?page=199'><button >199</button></a><a class='button' href='http://example.com/?page=200'><button >200</button></a><a class='button' href='http://example.com/?page=196'><button >>></button></a></div>	<h3>$page = 200, $page_count = 200;</h3>
+	<div class='pag'><a class='button' href='http://example.com/?page=199'><button ><<</button></a><a class='button' href='http://example.com/?page=1'><button >1</button></a><a class='button' href='http://example.com/?page=200'><button disabled>...</button></a><a class='button' href='http://example.com/?page=194'><button >194</button></a><a class='button' href='http://example.com/?page=195'><button >195</button></a><a class='button' href='http://example.com/?page=196'><button >196</button></a><a class='button' href='http://example.com/?page=197'><button >197</button></a><a class='button' href='http://example.com/?page=198'><button >198</button></a><a class='button' href='http://example.com/?page=199'><button >199</button></a><a class='button' href='http://example.com/?page=200'><button disabled>200</button></a><a class='button' href=''><button disabled>>></button></a></div>	<h3>$page = 201, $page_count = 200;</h3>
+	<div class='pag'><a class='button' href=''><button disabled><<</button></a><a class='button' href='http://example.com/?page=1'><button disabled>1</button></a><a class='button' href='http://example.com/?page=2'><button >2</button></a><a class='button' href='http://example.com/?page=3'><button >3</button></a><a class='button' href='http://example.com/?page=4'><button >4</button></a><a class='button' href='http://example.com/?page=5'><button >5</button></a><a class='button' href='http://example.com/?page=6'><button >6</button></a><a class='button' href='http://example.com/?page=7'><button >7</button></a><a class='button' href='http://example.com/?page=1'><button disabled>...</button></a><a class='button' href='http://example.com/?page=200'><button >200</button></a><a class='button' href='http://example.com/?page=2'><button >>></button></a></div>	<h3>$page = 1, $page_count = 2;</h3>
+	<div class='pag'><a class='button' href=''><button disabled><<</button></a><a class='button' href='http://example.com/?page=1'><button disabled>1</button></a><a class='button' href='http://example.com/?page=2'><button >2</button></a><a class='button' href='http://example.com/?page=2'><button >>></button></a></div>	<h3>$page = 2, $page_count = 2;</h3>
+	<div class='pag'><a class='button' href='http://example.com/?page=1'><button ><<</button></a><a class='button' href='http://example.com/?page=1'><button >1</button></a><a class='button' href='http://example.com/?page=2'><button disabled>2</button></a><a class='button' href=''><button disabled>>></button></a></div>	<h3>$page = 1, $page_count = 1;</h3>
+	<div class='pag'><a class='button' href=''><button disabled><<</button></a><a class='button' href='http://example.com/?page=1'><button disabled>1</button></a><a class='button' href=''><button disabled>>></button></a></div>	<h3>$page = 5, $page_count = 10;</h3>
+	<div class='pag'><a class='button' href='http://example.com/?page=4'><button ><<</button></a><a class='button' href='http://example.com/?page=1'><button >1</button></a><a class='button' href='http://example.com/?page=2'><button >2</button></a><a class='button' href='http://example.com/?page=3'><button >3</button></a><a class='button' href='http://example.com/?page=4'><button >4</button></a><a class='button' href='http://example.com/?page=5'><button disabled>5</button></a><a class='button' href='http://example.com/?page=6'><button >6</button></a><a class='button' href='http://example.com/?page=7'><button >7</button></a><a class='button' href='http://example.com/?page=5'><button disabled>...</button></a><a class='button' href='http://example.com/?page=10'><button >10</button></a><a class='button' href='http://example.com/?page=6'><button >>></button></a></div>	<h3>$page = 8, $page_count = 10;</h3>
+	<div class='pag'><a class='button' href='http://example.com/?page=7'><button ><<</button></a><a class='button' href='http://example.com/?page=1'><button >1</button></a><a class='button' href='http://example.com/?page=8'><button disabled>...</button></a><a class='button' href='http://example.com/?page=4'><button >4</button></a><a class='button' href='http://example.com/?page=5'><button >5</button></a><a class='button' href='http://example.com/?page=6'><button >6</button></a><a class='button' href='http://example.com/?page=7'><button >7</button></a><a class='button' href='http://example.com/?page=8'><button disabled>8</button></a><a class='button' href='http://example.com/?page=9'><button >9</button></a><a class='button' href='http://example.com/?page=10'><button >10</button></a><a class='button' href='http://example.com/?page=9'><button >>></button></a></div>	<h3>$page = 10000, $page_count = 10500;</h3>
+	<div class='pag'><a class='button' href='http://example.com/?page=9999'><button ><<</button></a><a class='button' href='http://example.com/?page=1'><button >1</button></a><a class='button' href='http://example.com/?page=10000'><button disabled>...</button></a><a class='button' href='http://example.com/?page=9998'><button >9998</button></a><a class='button' href='http://example.com/?page=9999'><button >9999</button></a><a class='button' href='http://example.com/?page=10000'><button disabled>10000</button></a><a class='button' href='http://example.com/?page=10001'><button >10001</button></a><a class='button' href='http://example.com/?page=10002'><button >10002</button></a><a class='button' href='http://example.com/?page=10000'><button disabled>...</button></a><a class='button' href='http://example.com/?page=10500'><button >10500</button></a><a class='button' href='http://example.com/?page=10001'><button >>></button></a></div>	<h3>$page = 10495, $page_count = 10500;</h3>
+	<div class='pag'><a class='button' href='http://example.com/?page=10494'><button ><<</button></a><a class='button' href='http://example.com/?page=1'><button >1</button></a><a class='button' href='http://example.com/?page=10495'><button disabled>...</button></a><a class='button' href='http://example.com/?page=10494'><button >10494</button></a><a class='button' href='http://example.com/?page=10495'><button disabled>10495</button></a><a class='button' href='http://example.com/?page=10496'><button >10496</button></a><a class='button' href='http://example.com/?page=10497'><button >10497</button></a><a class='button' href='http://example.com/?page=10498'><button >10498</button></a><a class='button' href='http://example.com/?page=10499'><button >10499</button></a><a class='button' href='http://example.com/?page=10500'><button >10500</button></a><a class='button' href='http://example.com/?page=10496'><button >>></button></a></div>	<h2>Powered by beso9595</h2>
+</div>
+</body>
+</html>
